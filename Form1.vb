@@ -1,44 +1,46 @@
 ﻿Public Class Form1
-    ' Prototype "database" of users for testing purposes
-    Public dictTestUser As New Dictionary(Of String, String) From {
+
+    ' Prototype "database"
+    Private ReadOnly users As New Dictionary(Of String, String) From {
         {"user1", "pass1"},
         {"user2", "pass2"},
         {"user3", "pass3"}
     }
 
-    ' Login credentials
-    Dim txtLoginUserSubmission As String
-    Dim txtLoginPassSubmission As String
-
-    Private Sub txtLoginPass_TextChanged(sender As Object, e As EventArgs) Handles txtLoginPass.TextChanged
-        txtLoginPassSubmission = txtLoginPass.Text
-    End Sub
-
-    Private Sub txtLoginUser_TextChanged(sender As Object, e As EventArgs) Handles txtLoginUser.TextChanged
-        txtLoginUserSubmission = txtLoginUser.Text
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Mask password input
+        txtLoginPass.UseSystemPasswordChar = True
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        ' Get current values (safer to read directly as well)
-        Dim username As String = txtLoginUser.Text.Trim()
-        Dim password As String = txtLoginPass.Text.Trim()
+        Dim username = txtLoginUser.Text.Trim()
+        Dim password = txtLoginPass.Text
 
-        ' Check if user exists
-        If dictTestUser.ContainsKey(username) Then
+        ' Validate input first
+        If String.IsNullOrWhiteSpace(username) OrElse String.IsNullOrWhiteSpace(password) Then
+            MessageBox.Show("Please enter both username and password.")
+            Exit Sub
+        End If
 
-            ' Use Select Case for password check
-            Select Case dictTestUser(username)
-                Case password
-                    MessageBox.Show("Login successful!")
-                    Form.ActiveForm.Hide() ' Hide the login form
-                    Dim componentsDash As New Form2() ' Create an instance of the components dashboard
-                    componentsDash.Show() ' Show the components dashboard
-                Case Else
-                    MessageBox.Show("Incorrect password.")
-            End Select
+        ' Try get password safely
+        Dim storedPassword As String = Nothing
 
+        If users.TryGetValue(username, storedPassword) Then
+            If storedPassword = password Then
+                MessageBox.Show("Login successful!")
+
+                Me.Hide()
+                Using dashboard As New Form2()
+                    dashboard.ShowDialog()
+                End Using
+
+                Me.Show()
+            Else
+                MessageBox.Show("Incorrect password.")
+            End If
         Else
             MessageBox.Show("User not found.")
         End If
     End Sub
+
 End Class
