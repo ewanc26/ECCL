@@ -30,6 +30,8 @@
             Select Case dictTestUser(username)
                 Case password
                     MessageBox.Show("Login successful!")
+                    Form.ActiveForm.Hide() ' Hide the login form
+                    Dim componentsDash As New Form2() ' Create an instance of the components dashboard
                 Case Else
                     MessageBox.Show("Incorrect password.")
             End Select
