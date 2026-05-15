@@ -1,9 +1,8 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form2
     Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -14,478 +13,472 @@ Partial Class Form2
         End Try
     End Sub
 
-    'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Label1 = New Label()
-        RadioButton1 = New RadioButton()
-        RadioButton2 = New RadioButton()
-        Label2 = New Label()
-        PictureBox1 = New PictureBox()
-        Label3 = New Label()
-        Label4 = New Label()
-        PictureBox2 = New PictureBox()
-        Label5 = New Label()
-        RadioButton3 = New RadioButton()
-        RadioButton4 = New RadioButton()
-        Label6 = New Label()
-        PictureBox3 = New PictureBox()
-        Label7 = New Label()
-        RadioButton5 = New RadioButton()
-        RadioButton6 = New RadioButton()
-        Label8 = New Label()
-        PictureBox4 = New PictureBox()
-        Label9 = New Label()
-        RadioButton7 = New RadioButton()
-        RadioButton8 = New RadioButton()
-        Label10 = New Label()
-        PictureBox5 = New PictureBox()
-        Label11 = New Label()
-        RadioButton9 = New RadioButton()
-        RadioButton10 = New RadioButton()
-        Label12 = New Label()
-        PictureBox6 = New PictureBox()
-        Label13 = New Label()
-        RadioButton11 = New RadioButton()
-        RadioButton12 = New RadioButton()
-        Button1 = New Button()
-        Label14 = New Label()
-        Label15 = New Label()
-        Label16 = New Label()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
+        ' ── Title ──────────────────────────────────────────────────────────────
+        lblTitle = New Label()
+        ' ── Motherboard ─────────────────────────────────────────────────────────
+        lblMobo = New Label()
+        rbMoboAMD = New RadioButton()
+        rbMoboIntel = New RadioButton()
+        picMobo = New PictureBox()
+        lblMoboPrice = New Label()
+        ' ── PSU ─────────────────────────────────────────────────────────────────
+        lblPSU = New Label()
+        rbPSU400 = New RadioButton()
+        rbPSU600 = New RadioButton()
+        rbPSU800 = New RadioButton()
+        picPSU = New PictureBox()
+        lblPSUPrice = New Label()
+        ' ── HDD ─────────────────────────────────────────────────────────────────
+        lblHDD = New Label()
+        rbHDD1TB = New RadioButton()
+        rbHDD2TB = New RadioButton()
+        rbHDD4TB = New RadioButton()
+        picHDD = New PictureBox()
+        lblHDDPrice = New Label()
+        ' ── SSD ─────────────────────────────────────────────────────────────────
+        lblSSD = New Label()
+        rbSSD256 = New RadioButton()
+        rbSSD512 = New RadioButton()
+        picSSD = New PictureBox()
+        lblSSDPrice = New Label()
+        ' ── Case ────────────────────────────────────────────────────────────────
+        lblCase = New Label()
+        rbCaseDesktop = New RadioButton()
+        rbCaseTower = New RadioButton()
+        rbCaseGaming = New RadioButton()
+        picCase = New PictureBox()
+        lblCasePrice = New Label()
+        ' ── RAM ─────────────────────────────────────────────────────────────────
+        lblRAM = New Label()
+        rbRAM4GB = New RadioButton()
+        rbRAM8GB = New RadioButton()
+        rbRAM16GB = New RadioButton()
+        picRAM = New PictureBox()
+        lblRAMPrice = New Label()
+        ' ── Summary ─────────────────────────────────────────────────────────────
+        lblSubtotalLabel = New Label()
+        lblSubtotalValue = New Label()
+        btnContinue = New Button()
+
+        CType(picMobo, ComponentModel.ISupportInitialize).BeginInit()
+        CType(picPSU, ComponentModel.ISupportInitialize).BeginInit()
+        CType(picHDD, ComponentModel.ISupportInitialize).BeginInit()
+        CType(picSSD, ComponentModel.ISupportInitialize).BeginInit()
+        CType(picCase, ComponentModel.ISupportInitialize).BeginInit()
+        CType(picRAM, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(397, 22)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(490, 50)
-        Label1.TabIndex = 0
-        Label1.Text = "ECCL Component Selection"
-        Label1.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' RadioButton1
-        ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(79, 142)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(90, 17)
-        RadioButton1.TabIndex = 1
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "RadioButton1"
-        RadioButton1.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton2
-        ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(79, 165)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(90, 17)
-        RadioButton2.TabIndex = 2
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "RadioButton2"
-        RadioButton2.UseVisualStyleBackColor = True
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(79, 104)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(39, 13)
-        Label2.TabIndex = 3
-        Label2.Text = "Label2"
-        ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.Location = New Point(219, 104)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(186, 191)
-        PictureBox1.TabIndex = 4
-        PictureBox1.TabStop = False
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(297, 312)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(39, 13)
-        Label3.TabIndex = 5
-        Label3.Text = "Label3"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(681, 312)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(39, 13)
-        Label4.TabIndex = 10
-        Label4.Text = "Label4"
-        ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.Location = New Point(603, 104)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(186, 191)
-        PictureBox2.TabIndex = 9
-        PictureBox2.TabStop = False
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(463, 104)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(39, 13)
-        Label5.TabIndex = 8
-        Label5.Text = "Label5"
-        ' 
-        ' RadioButton3
-        ' 
-        RadioButton3.AutoSize = True
-        RadioButton3.Location = New Point(463, 165)
-        RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(90, 17)
-        RadioButton3.TabIndex = 7
-        RadioButton3.TabStop = True
-        RadioButton3.Text = "RadioButton3"
-        RadioButton3.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton4
-        ' 
-        RadioButton4.AutoSize = True
-        RadioButton4.Location = New Point(463, 142)
-        RadioButton4.Name = "RadioButton4"
-        RadioButton4.Size = New Size(90, 17)
-        RadioButton4.TabIndex = 6
-        RadioButton4.TabStop = True
-        RadioButton4.Text = "RadioButton4"
-        RadioButton4.UseVisualStyleBackColor = True
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(1041, 312)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(39, 13)
-        Label6.TabIndex = 15
-        Label6.Text = "Label6"
-        ' 
-        ' PictureBox3
-        ' 
-        PictureBox3.Location = New Point(963, 104)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(186, 191)
-        PictureBox3.TabIndex = 14
-        PictureBox3.TabStop = False
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Location = New Point(823, 104)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(39, 13)
-        Label7.TabIndex = 13
-        Label7.Text = "Label7"
-        ' 
-        ' RadioButton5
-        ' 
-        RadioButton5.AutoSize = True
-        RadioButton5.Location = New Point(823, 165)
-        RadioButton5.Name = "RadioButton5"
-        RadioButton5.Size = New Size(90, 17)
-        RadioButton5.TabIndex = 12
-        RadioButton5.TabStop = True
-        RadioButton5.Text = "RadioButton5"
-        RadioButton5.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton6
-        ' 
-        RadioButton6.AutoSize = True
-        RadioButton6.Location = New Point(823, 142)
-        RadioButton6.Name = "RadioButton6"
-        RadioButton6.Size = New Size(90, 17)
-        RadioButton6.TabIndex = 11
-        RadioButton6.TabStop = True
-        RadioButton6.Text = "RadioButton6"
-        RadioButton6.UseVisualStyleBackColor = True
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Location = New Point(297, 556)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(39, 13)
-        Label8.TabIndex = 20
-        Label8.Text = "Label8"
-        ' 
-        ' PictureBox4
-        ' 
-        PictureBox4.Location = New Point(219, 348)
-        PictureBox4.Name = "PictureBox4"
-        PictureBox4.Size = New Size(186, 191)
-        PictureBox4.TabIndex = 19
-        PictureBox4.TabStop = False
-        ' 
-        ' Label9
-        ' 
-        Label9.AutoSize = True
-        Label9.Location = New Point(79, 348)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(39, 13)
-        Label9.TabIndex = 18
-        Label9.Text = "Label9"
-        ' 
-        ' RadioButton7
-        ' 
-        RadioButton7.AutoSize = True
-        RadioButton7.Location = New Point(79, 409)
-        RadioButton7.Name = "RadioButton7"
-        RadioButton7.Size = New Size(90, 17)
-        RadioButton7.TabIndex = 17
-        RadioButton7.TabStop = True
-        RadioButton7.Text = "RadioButton7"
-        RadioButton7.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton8
-        ' 
-        RadioButton8.AutoSize = True
-        RadioButton8.Location = New Point(79, 386)
-        RadioButton8.Name = "RadioButton8"
-        RadioButton8.Size = New Size(90, 17)
-        RadioButton8.TabIndex = 16
-        RadioButton8.TabStop = True
-        RadioButton8.Text = "RadioButton8"
-        RadioButton8.UseVisualStyleBackColor = True
-        ' 
-        ' Label10
-        ' 
-        Label10.AutoSize = True
-        Label10.Location = New Point(681, 556)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(45, 13)
-        Label10.TabIndex = 25
-        Label10.Text = "Label10"
-        ' 
-        ' PictureBox5
-        ' 
-        PictureBox5.Location = New Point(603, 348)
-        PictureBox5.Name = "PictureBox5"
-        PictureBox5.Size = New Size(186, 191)
-        PictureBox5.TabIndex = 24
-        PictureBox5.TabStop = False
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.Location = New Point(463, 348)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(45, 13)
-        Label11.TabIndex = 23
-        Label11.Text = "Label11"
-        ' 
-        ' RadioButton9
-        ' 
-        RadioButton9.AutoSize = True
-        RadioButton9.Location = New Point(463, 409)
-        RadioButton9.Name = "RadioButton9"
-        RadioButton9.Size = New Size(90, 17)
-        RadioButton9.TabIndex = 22
-        RadioButton9.TabStop = True
-        RadioButton9.Text = "RadioButton9"
-        RadioButton9.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton10
-        ' 
-        RadioButton10.AutoSize = True
-        RadioButton10.Location = New Point(463, 386)
-        RadioButton10.Name = "RadioButton10"
-        RadioButton10.Size = New Size(96, 17)
-        RadioButton10.TabIndex = 21
-        RadioButton10.TabStop = True
-        RadioButton10.Text = "RadioButton10"
-        RadioButton10.UseVisualStyleBackColor = True
-        ' 
-        ' Label12
-        ' 
-        Label12.AutoSize = True
-        Label12.Location = New Point(1041, 556)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(45, 13)
-        Label12.TabIndex = 30
-        Label12.Text = "Label12"
-        ' 
-        ' PictureBox6
-        ' 
-        PictureBox6.Location = New Point(963, 348)
-        PictureBox6.Name = "PictureBox6"
-        PictureBox6.Size = New Size(186, 191)
-        PictureBox6.TabIndex = 29
-        PictureBox6.TabStop = False
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Location = New Point(823, 348)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(45, 13)
-        Label13.TabIndex = 28
-        Label13.Text = "Label13"
-        ' 
-        ' RadioButton11
-        ' 
-        RadioButton11.AutoSize = True
-        RadioButton11.Location = New Point(823, 409)
-        RadioButton11.Name = "RadioButton11"
-        RadioButton11.Size = New Size(96, 17)
-        RadioButton11.TabIndex = 27
-        RadioButton11.TabStop = True
-        RadioButton11.Text = "RadioButton11"
-        RadioButton11.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton12
-        ' 
-        RadioButton12.AutoSize = True
-        RadioButton12.Location = New Point(823, 386)
-        RadioButton12.Name = "RadioButton12"
-        RadioButton12.Size = New Size(96, 17)
-        RadioButton12.TabIndex = 26
-        RadioButton12.TabStop = True
-        RadioButton12.Text = "RadioButton12"
-        RadioButton12.UseVisualStyleBackColor = True
-        ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(1154, 621)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(113, 50)
-        Button1.TabIndex = 31
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Location = New Point(1222, 605)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(45, 13)
-        Label14.TabIndex = 32
-        Label14.Text = "Label14"
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.Location = New Point(1103, 658)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(45, 13)
-        Label15.TabIndex = 33
-        Label15.Text = "Label15"
-        ' 
-        ' Label16
-        ' 
-        Label16.AutoSize = True
-        Label16.Location = New Point(1103, 605)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(45, 13)
-        Label16.TabIndex = 34
-        Label16.Text = "Label16"
-        ' 
-        ' Form2
-        ' 
-        AutoScaleDimensions = New SizeF(6F, 13F)
+
+        ' ── lblTitle ────────────────────────────────────────────────────────────
+        lblTitle.AutoSize = False
+        lblTitle.Font = New Font("Segoe UI", 22F, FontStyle.Bold)
+        lblTitle.Location = New Point(300, 15)
+        lblTitle.Name = "lblTitle"
+        lblTitle.Size = New Size(680, 50)
+        lblTitle.TabIndex = 0
+        lblTitle.Text = "ECCL Component Selection"
+        lblTitle.TextAlign = ContentAlignment.MiddleCenter
+
+        ' ══ ROW 1 ══════════════════════════════════════════════════════════════
+
+        ' ── lblMobo ─────────────────────────────────────────────────────────────
+        lblMobo.AutoSize = True
+        lblMobo.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        lblMobo.Location = New Point(30, 80)
+        lblMobo.Name = "lblMobo"
+        lblMobo.TabIndex = 1
+        lblMobo.Text = "Motherboard"
+
+        ' ── rbMoboAMD ───────────────────────────────────────────────────────────
+        rbMoboAMD.AutoSize = True
+        rbMoboAMD.Checked = True
+        rbMoboAMD.Location = New Point(30, 110)
+        rbMoboAMD.Name = "rbMoboAMD"
+        rbMoboAMD.TabIndex = 2
+        rbMoboAMD.TabStop = True
+        rbMoboAMD.Text = "AMD"
+
+        ' ── rbMoboIntel ─────────────────────────────────────────────────────────
+        rbMoboIntel.AutoSize = True
+        rbMoboIntel.Location = New Point(30, 135)
+        rbMoboIntel.Name = "rbMoboIntel"
+        rbMoboIntel.TabIndex = 3
+        rbMoboIntel.Text = "Intel"
+
+        ' ── picMobo ─────────────────────────────────────────────────────────────
+        picMobo.BorderStyle = BorderStyle.FixedSingle
+        picMobo.Location = New Point(180, 80)
+        picMobo.Name = "picMobo"
+        picMobo.Size = New Size(160, 140)
+        picMobo.SizeMode = PictureBoxSizeMode.Zoom
+        picMobo.TabIndex = 4
+        picMobo.TabStop = False
+
+        ' ── lblMoboPrice ────────────────────────────────────────────────────────
+        lblMoboPrice.AutoSize = True
+        lblMoboPrice.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        lblMoboPrice.Location = New Point(225, 228)
+        lblMoboPrice.Name = "lblMoboPrice"
+        lblMoboPrice.TabIndex = 5
+        lblMoboPrice.Text = "£150"
+
+        ' ── lblPSU ──────────────────────────────────────────────────────────────
+        lblPSU.AutoSize = True
+        lblPSU.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        lblPSU.Location = New Point(400, 80)
+        lblPSU.Name = "lblPSU"
+        lblPSU.TabIndex = 6
+        lblPSU.Text = "Power Supply Unit"
+
+        ' ── rbPSU400 ────────────────────────────────────────────────────────────
+        rbPSU400.AutoSize = True
+        rbPSU400.Location = New Point(400, 110)
+        rbPSU400.Name = "rbPSU400"
+        rbPSU400.TabIndex = 7
+        rbPSU400.Text = "400 W"
+
+        ' ── rbPSU600 ────────────────────────────────────────────────────────────
+        rbPSU600.AutoSize = True
+        rbPSU600.Checked = True
+        rbPSU600.Location = New Point(400, 135)
+        rbPSU600.Name = "rbPSU600"
+        rbPSU600.TabIndex = 8
+        rbPSU600.TabStop = True
+        rbPSU600.Text = "600 W"
+
+        ' ── rbPSU800 ────────────────────────────────────────────────────────────
+        rbPSU800.AutoSize = True
+        rbPSU800.Location = New Point(400, 160)
+        rbPSU800.Name = "rbPSU800"
+        rbPSU800.TabIndex = 9
+        rbPSU800.Text = "800 W"
+
+        ' ── picPSU ──────────────────────────────────────────────────────────────
+        picPSU.BorderStyle = BorderStyle.FixedSingle
+        picPSU.Location = New Point(560, 80)
+        picPSU.Name = "picPSU"
+        picPSU.Size = New Size(160, 140)
+        picPSU.SizeMode = PictureBoxSizeMode.Zoom
+        picPSU.TabIndex = 10
+        picPSU.TabStop = False
+
+        ' ── lblPSUPrice ─────────────────────────────────────────────────────────
+        lblPSUPrice.AutoSize = True
+        lblPSUPrice.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        lblPSUPrice.Location = New Point(610, 228)
+        lblPSUPrice.Name = "lblPSUPrice"
+        lblPSUPrice.TabIndex = 11
+        lblPSUPrice.Text = "£30"
+
+        ' ── lblHDD ──────────────────────────────────────────────────────────────
+        lblHDD.AutoSize = True
+        lblHDD.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        lblHDD.Location = New Point(780, 80)
+        lblHDD.Name = "lblHDD"
+        lblHDD.TabIndex = 12
+        lblHDD.Text = "Hard Disk Drive"
+
+        ' ── rbHDD1TB ────────────────────────────────────────────────────────────
+        rbHDD1TB.AutoSize = True
+        rbHDD1TB.Location = New Point(780, 110)
+        rbHDD1TB.Name = "rbHDD1TB"
+        rbHDD1TB.TabIndex = 13
+        rbHDD1TB.Text = "1 TB"
+
+        ' ── rbHDD2TB ────────────────────────────────────────────────────────────
+        rbHDD2TB.AutoSize = True
+        rbHDD2TB.Checked = True
+        rbHDD2TB.Location = New Point(780, 135)
+        rbHDD2TB.Name = "rbHDD2TB"
+        rbHDD2TB.TabIndex = 14
+        rbHDD2TB.TabStop = True
+        rbHDD2TB.Text = "2 TB"
+
+        ' ── rbHDD4TB ────────────────────────────────────────────────────────────
+        rbHDD4TB.AutoSize = True
+        rbHDD4TB.Location = New Point(780, 160)
+        rbHDD4TB.Name = "rbHDD4TB"
+        rbHDD4TB.TabIndex = 15
+        rbHDD4TB.Text = "4 TB"
+
+        ' ── picHDD ──────────────────────────────────────────────────────────────
+        picHDD.BorderStyle = BorderStyle.FixedSingle
+        picHDD.Location = New Point(940, 80)
+        picHDD.Name = "picHDD"
+        picHDD.Size = New Size(160, 140)
+        picHDD.SizeMode = PictureBoxSizeMode.Zoom
+        picHDD.TabIndex = 16
+        picHDD.TabStop = False
+
+        ' ── lblHDDPrice ─────────────────────────────────────────────────────────
+        lblHDDPrice.AutoSize = True
+        lblHDDPrice.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        lblHDDPrice.Location = New Point(990, 228)
+        lblHDDPrice.Name = "lblHDDPrice"
+        lblHDDPrice.TabIndex = 17
+        lblHDDPrice.Text = "£100"
+
+        ' ══ ROW 2 ══════════════════════════════════════════════════════════════
+
+        ' ── lblSSD ──────────────────────────────────────────────────────────────
+        lblSSD.AutoSize = True
+        lblSSD.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        lblSSD.Location = New Point(30, 310)
+        lblSSD.Name = "lblSSD"
+        lblSSD.TabIndex = 18
+        lblSSD.Text = "Solid State Drive"
+
+        ' ── rbSSD256 ────────────────────────────────────────────────────────────
+        rbSSD256.AutoSize = True
+        rbSSD256.Location = New Point(30, 340)
+        rbSSD256.Name = "rbSSD256"
+        rbSSD256.TabIndex = 19
+        rbSSD256.Text = "256 GB"
+
+        ' ── rbSSD512 ────────────────────────────────────────────────────────────
+        rbSSD512.AutoSize = True
+        rbSSD512.Checked = True
+        rbSSD512.Location = New Point(30, 365)
+        rbSSD512.Name = "rbSSD512"
+        rbSSD512.TabIndex = 20
+        rbSSD512.TabStop = True
+        rbSSD512.Text = "512 GB"
+
+        ' ── picSSD ──────────────────────────────────────────────────────────────
+        picSSD.BorderStyle = BorderStyle.FixedSingle
+        picSSD.Location = New Point(180, 310)
+        picSSD.Name = "picSSD"
+        picSSD.Size = New Size(160, 140)
+        picSSD.SizeMode = PictureBoxSizeMode.Zoom
+        picSSD.TabIndex = 21
+        picSSD.TabStop = False
+
+        ' ── lblSSDPrice ─────────────────────────────────────────────────────────
+        lblSSDPrice.AutoSize = True
+        lblSSDPrice.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        lblSSDPrice.Location = New Point(225, 458)
+        lblSSDPrice.Name = "lblSSDPrice"
+        lblSSDPrice.TabIndex = 22
+        lblSSDPrice.Text = "£90"
+
+        ' ── lblCase ─────────────────────────────────────────────────────────────
+        lblCase.AutoSize = True
+        lblCase.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        lblCase.Location = New Point(400, 310)
+        lblCase.Name = "lblCase"
+        lblCase.TabIndex = 23
+        lblCase.Text = "Case"
+
+        ' ── rbCaseDesktop ───────────────────────────────────────────────────────
+        rbCaseDesktop.AutoSize = True
+        rbCaseDesktop.Location = New Point(400, 340)
+        rbCaseDesktop.Name = "rbCaseDesktop"
+        rbCaseDesktop.TabIndex = 24
+        rbCaseDesktop.Text = "Desktop"
+
+        ' ── rbCaseTower ─────────────────────────────────────────────────────────
+        rbCaseTower.AutoSize = True
+        rbCaseTower.Checked = True
+        rbCaseTower.Location = New Point(400, 365)
+        rbCaseTower.Name = "rbCaseTower"
+        rbCaseTower.TabIndex = 25
+        rbCaseTower.TabStop = True
+        rbCaseTower.Text = "Tower"
+
+        ' ── rbCaseGaming ────────────────────────────────────────────────────────
+        rbCaseGaming.AutoSize = True
+        rbCaseGaming.Location = New Point(400, 390)
+        rbCaseGaming.Name = "rbCaseGaming"
+        rbCaseGaming.TabIndex = 26
+        rbCaseGaming.Text = "Gaming"
+
+        ' ── picCase ─────────────────────────────────────────────────────────────
+        picCase.BorderStyle = BorderStyle.FixedSingle
+        picCase.Location = New Point(560, 310)
+        picCase.Name = "picCase"
+        picCase.Size = New Size(160, 140)
+        picCase.SizeMode = PictureBoxSizeMode.Zoom
+        picCase.TabIndex = 27
+        picCase.TabStop = False
+
+        ' ── lblCasePrice ────────────────────────────────────────────────────────
+        lblCasePrice.AutoSize = True
+        lblCasePrice.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        lblCasePrice.Location = New Point(610, 458)
+        lblCasePrice.Name = "lblCasePrice"
+        lblCasePrice.TabIndex = 28
+        lblCasePrice.Text = "£150"
+
+        ' ── lblRAM ──────────────────────────────────────────────────────────────
+        lblRAM.AutoSize = True
+        lblRAM.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        lblRAM.Location = New Point(780, 310)
+        lblRAM.Name = "lblRAM"
+        lblRAM.TabIndex = 29
+        lblRAM.Text = "Random Access Memory"
+
+        ' ── rbRAM4GB ────────────────────────────────────────────────────────────
+        rbRAM4GB.AutoSize = True
+        rbRAM4GB.Location = New Point(780, 340)
+        rbRAM4GB.Name = "rbRAM4GB"
+        rbRAM4GB.TabIndex = 30
+        rbRAM4GB.Text = "4 GB"
+
+        ' ── rbRAM8GB ────────────────────────────────────────────────────────────
+        rbRAM8GB.AutoSize = True
+        rbRAM8GB.Checked = True
+        rbRAM8GB.Location = New Point(780, 365)
+        rbRAM8GB.Name = "rbRAM8GB"
+        rbRAM8GB.TabIndex = 31
+        rbRAM8GB.TabStop = True
+        rbRAM8GB.Text = "8 GB"
+
+        ' ── rbRAM16GB ───────────────────────────────────────────────────────────
+        rbRAM16GB.AutoSize = True
+        rbRAM16GB.Location = New Point(780, 390)
+        rbRAM16GB.Name = "rbRAM16GB"
+        rbRAM16GB.TabIndex = 32
+        rbRAM16GB.Text = "16 GB"
+
+        ' ── picRAM ──────────────────────────────────────────────────────────────
+        picRAM.BorderStyle = BorderStyle.FixedSingle
+        picRAM.Location = New Point(940, 310)
+        picRAM.Name = "picRAM"
+        picRAM.Size = New Size(160, 140)
+        picRAM.SizeMode = PictureBoxSizeMode.Zoom
+        picRAM.TabIndex = 33
+        picRAM.TabStop = False
+
+        ' ── lblRAMPrice ─────────────────────────────────────────────────────────
+        lblRAMPrice.AutoSize = True
+        lblRAMPrice.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        lblRAMPrice.Location = New Point(990, 458)
+        lblRAMPrice.Name = "lblRAMPrice"
+        lblRAMPrice.TabIndex = 34
+        lblRAMPrice.Text = "£60"
+
+        ' ══ SUMMARY ════════════════════════════════════════════════════════════
+
+        ' ── lblSubtotalLabel ────────────────────────────────────────────────────
+        lblSubtotalLabel.AutoSize = True
+        lblSubtotalLabel.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        lblSubtotalLabel.Location = New Point(870, 520)
+        lblSubtotalLabel.Name = "lblSubtotalLabel"
+        lblSubtotalLabel.TabIndex = 35
+        lblSubtotalLabel.Text = "Subtotal:"
+
+        ' ── lblSubtotalValue ────────────────────────────────────────────────────
+        lblSubtotalValue.AutoSize = True
+        lblSubtotalValue.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        lblSubtotalValue.Location = New Point(990, 520)
+        lblSubtotalValue.Name = "lblSubtotalValue"
+        lblSubtotalValue.TabIndex = 36
+        lblSubtotalValue.Text = "£0"
+
+        ' ── btnContinue ─────────────────────────────────────────────────────────
+        btnContinue.Font = New Font("Segoe UI", 14F)
+        btnContinue.Location = New Point(1030, 560)
+        btnContinue.Name = "btnContinue"
+        btnContinue.Size = New Size(140, 50)
+        btnContinue.TabIndex = 37
+        btnContinue.Text = "Continue"
+        btnContinue.UseVisualStyleBackColor = True
+
+        ' ── Form2 ───────────────────────────────────────────────────────────────
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1279, 683)
-        Controls.Add(Label16)
-        Controls.Add(Label15)
-        Controls.Add(Label14)
-        Controls.Add(Button1)
-        Controls.Add(Label12)
-        Controls.Add(PictureBox6)
-        Controls.Add(Label13)
-        Controls.Add(RadioButton11)
-        Controls.Add(RadioButton12)
-        Controls.Add(Label10)
-        Controls.Add(PictureBox5)
-        Controls.Add(Label11)
-        Controls.Add(RadioButton9)
-        Controls.Add(RadioButton10)
-        Controls.Add(Label8)
-        Controls.Add(PictureBox4)
-        Controls.Add(Label9)
-        Controls.Add(RadioButton7)
-        Controls.Add(RadioButton8)
-        Controls.Add(Label6)
-        Controls.Add(PictureBox3)
-        Controls.Add(Label7)
-        Controls.Add(RadioButton5)
-        Controls.Add(RadioButton6)
-        Controls.Add(Label4)
-        Controls.Add(PictureBox2)
-        Controls.Add(Label5)
-        Controls.Add(RadioButton3)
-        Controls.Add(RadioButton4)
-        Controls.Add(Label3)
-        Controls.Add(PictureBox1)
-        Controls.Add(Label2)
-        Controls.Add(RadioButton2)
-        Controls.Add(RadioButton1)
-        Controls.Add(Label1)
-        Font = New Font("Microsoft Sans Serif", 8.25F)
-        Name = "Form2"
-        Text = "Form2"
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
+        ClientSize = New Size(1200, 630)
+        Text = "ECCL – Component Selection"
+
+        Controls.Add(lblTitle)
+        Controls.Add(lblMobo)
+        Controls.Add(rbMoboAMD)
+        Controls.Add(rbMoboIntel)
+        Controls.Add(picMobo)
+        Controls.Add(lblMoboPrice)
+        Controls.Add(lblPSU)
+        Controls.Add(rbPSU400)
+        Controls.Add(rbPSU600)
+        Controls.Add(rbPSU800)
+        Controls.Add(picPSU)
+        Controls.Add(lblPSUPrice)
+        Controls.Add(lblHDD)
+        Controls.Add(rbHDD1TB)
+        Controls.Add(rbHDD2TB)
+        Controls.Add(rbHDD4TB)
+        Controls.Add(picHDD)
+        Controls.Add(lblHDDPrice)
+        Controls.Add(lblSSD)
+        Controls.Add(rbSSD256)
+        Controls.Add(rbSSD512)
+        Controls.Add(picSSD)
+        Controls.Add(lblSSDPrice)
+        Controls.Add(lblCase)
+        Controls.Add(rbCaseDesktop)
+        Controls.Add(rbCaseTower)
+        Controls.Add(rbCaseGaming)
+        Controls.Add(picCase)
+        Controls.Add(lblCasePrice)
+        Controls.Add(lblRAM)
+        Controls.Add(rbRAM4GB)
+        Controls.Add(rbRAM8GB)
+        Controls.Add(rbRAM16GB)
+        Controls.Add(picRAM)
+        Controls.Add(lblRAMPrice)
+        Controls.Add(lblSubtotalLabel)
+        Controls.Add(lblSubtotalValue)
+        Controls.Add(btnContinue)
+
+        CType(picMobo, ComponentModel.ISupportInitialize).EndInit()
+        CType(picPSU, ComponentModel.ISupportInitialize).EndInit()
+        CType(picHDD, ComponentModel.ISupportInitialize).EndInit()
+        CType(picSSD, ComponentModel.ISupportInitialize).EndInit()
+        CType(picCase, ComponentModel.ISupportInitialize).EndInit()
+        CType(picRAM, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents Label2 As Label
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents Label6 As Label
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents RadioButton6 As RadioButton
-    Friend WithEvents Label8 As Label
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents RadioButton7 As RadioButton
-    Friend WithEvents RadioButton8 As RadioButton
-    Friend WithEvents Label10 As Label
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents Label11 As Label
-    Friend WithEvents RadioButton9 As RadioButton
-    Friend WithEvents RadioButton10 As RadioButton
-    Friend WithEvents Label12 As Label
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents Label13 As Label
-    Friend WithEvents RadioButton11 As RadioButton
-    Friend WithEvents RadioButton12 As RadioButton
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label16 As Label
+    Friend WithEvents lblTitle As Label
+    Friend WithEvents lblMobo As Label
+    Friend WithEvents rbMoboAMD As RadioButton
+    Friend WithEvents rbMoboIntel As RadioButton
+    Friend WithEvents picMobo As PictureBox
+    Friend WithEvents lblMoboPrice As Label
+    Friend WithEvents lblPSU As Label
+    Friend WithEvents rbPSU400 As RadioButton
+    Friend WithEvents rbPSU600 As RadioButton
+    Friend WithEvents rbPSU800 As RadioButton
+    Friend WithEvents picPSU As PictureBox
+    Friend WithEvents lblPSUPrice As Label
+    Friend WithEvents lblHDD As Label
+    Friend WithEvents rbHDD1TB As RadioButton
+    Friend WithEvents rbHDD2TB As RadioButton
+    Friend WithEvents rbHDD4TB As RadioButton
+    Friend WithEvents picHDD As PictureBox
+    Friend WithEvents lblHDDPrice As Label
+    Friend WithEvents lblSSD As Label
+    Friend WithEvents rbSSD256 As RadioButton
+    Friend WithEvents rbSSD512 As RadioButton
+    Friend WithEvents picSSD As PictureBox
+    Friend WithEvents lblSSDPrice As Label
+    Friend WithEvents lblCase As Label
+    Friend WithEvents rbCaseDesktop As RadioButton
+    Friend WithEvents rbCaseTower As RadioButton
+    Friend WithEvents rbCaseGaming As RadioButton
+    Friend WithEvents picCase As PictureBox
+    Friend WithEvents lblCasePrice As Label
+    Friend WithEvents lblRAM As Label
+    Friend WithEvents rbRAM4GB As RadioButton
+    Friend WithEvents rbRAM8GB As RadioButton
+    Friend WithEvents rbRAM16GB As RadioButton
+    Friend WithEvents picRAM As PictureBox
+    Friend WithEvents lblRAMPrice As Label
+    Friend WithEvents lblSubtotalLabel As Label
+    Friend WithEvents lblSubtotalValue As Label
+    Friend WithEvents btnContinue As Button
+
 End Class
