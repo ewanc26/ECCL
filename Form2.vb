@@ -221,9 +221,12 @@ Public Class Form2
             ("Random Access Memory", If(rbRAM4GB.Checked, "4 GB", If(rbRAM8GB.Checked, "8 GB", "16 GB")), GetRAMPrice())
         }
 
-        Using invoice As New Form3(_username, components)
-            invoice.ShowDialog()
-        End Using
+        ' Initialize and show Form3
+        Dim invoice As New Form3(_username, components)
+        invoice.Show()
+
+        ' Close Form2
+        Me.Hide()
     End Sub
 
 End Class

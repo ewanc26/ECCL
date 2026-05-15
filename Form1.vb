@@ -24,11 +24,14 @@ Public Class Form1
 
         If users.TryGetValue(username, storedPassword) Then
             If storedPassword = password Then
+                ' 1. Hide the login form
                 Me.Hide()
+
+                ' 2. Open Form2 (Dashboard)
                 Using dashboard As New Form2(username)
+                    ' ShowDialog stops code execution here until Form2 is closed
                     dashboard.ShowDialog()
                 End Using
-                Me.Show()
             Else
                 MessageBox.Show("Incorrect password.")
             End If
