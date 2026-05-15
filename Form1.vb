@@ -1,4 +1,4 @@
-﻿Public Class Form1
+Public Class Form1
 
     ' Prototype "database"
     Private ReadOnly users As New Dictionary(Of String, String) From {
@@ -8,7 +8,6 @@
     }
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Mask password input
         txtLoginPass.UseSystemPasswordChar = True
     End Sub
 
@@ -16,24 +15,19 @@
         Dim username = txtLoginUser.Text.Trim()
         Dim password = txtLoginPass.Text
 
-        ' Validate input first
         If String.IsNullOrWhiteSpace(username) OrElse String.IsNullOrWhiteSpace(password) Then
             MessageBox.Show("Please enter both username and password.")
             Exit Sub
         End If
 
-        ' Try get password safely
         Dim storedPassword As String = Nothing
 
         If users.TryGetValue(username, storedPassword) Then
             If storedPassword = password Then
-                MessageBox.Show("Login successful!")
-
                 Me.Hide()
-                Using dashboard As New Form2()
+                Using dashboard As New Form2(username)
                     dashboard.ShowDialog()
                 End Using
-
                 Me.Show()
             Else
                 MessageBox.Show("Incorrect password.")
