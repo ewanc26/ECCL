@@ -1,3 +1,7 @@
+Imports System
+Imports System.Collections.Generic
+Imports System.Windows.Forms
+
 Public Class Form2
 
     Private ReadOnly _username As String
@@ -33,6 +37,7 @@ Public Class Form2
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         UpdateAllPrices()
+        UpdateImages()
     End Sub
 
     ' ── Subtotal ───────────────────────────────────────────────────────────────
@@ -82,6 +87,60 @@ Public Class Form2
         Dim subtotal As Integer = GetMoboPrice() + GetPSUPrice() + GetHDDPrice() +
                                    GetSSDPrice() + GetCasePrice() + GetRAMPrice()
         lblSubtotalValue.Text = $"£{subtotal}"
+
+        UpdateImages()
+    End Sub
+
+    Private Sub UpdateImages()
+        ' Motherboard
+        If rbMoboAMD.Checked Then
+            picMobo.Image = My.Resources.AMD
+        Else
+            picMobo.Image = My.Resources.intel
+        End If
+
+        ' PSU
+        If rbPSU400.Checked Then
+            picPSU.Image = My.Resources.PSU400
+        ElseIf rbPSU600.Checked Then
+            picPSU.Image = My.Resources.PSU600
+        Else
+            picPSU.Image = My.Resources.PSU850
+        End If
+
+        ' HDD
+        If rbHDD1TB.Checked Then
+            picHDD.Image = My.Resources._1TB_HDD
+        ElseIf rbHDD2TB.Checked Then
+            picHDD.Image = My.Resources._2TB_HDD
+        Else
+            picHDD.Image = My.Resources._4TB_HDD
+        End If
+
+        ' SSD
+        If rbSSD256.Checked Then
+            picSSD.Image = My.Resources.ssd256
+        Else
+            picSSD.Image = My.Resources.ssd512
+        End If
+
+        ' Case
+        If rbCaseDesktop.Checked Then
+            picCase.Image = My.Resources.Desktop
+        ElseIf rbCaseTower.Checked Then
+            picCase.Image = My.Resources.Tower
+        Else
+            picCase.Image = My.Resources.Game
+        End If
+
+        ' RAM
+        If rbRAM4GB.Checked Then
+            picRAM.Image = My.Resources.Ram4
+        ElseIf rbRAM8GB.Checked Then
+            picRAM.Image = My.Resources.Ram8
+        Else
+            picRAM.Image = My.Resources.Ram16
+        End If
     End Sub
 
     ' ── Radio button event handlers ────────────────────────────────────────────
@@ -153,7 +212,6 @@ Public Class Form2
     ' ── Continue button ────────────────────────────────────────────────────────
 
     Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles btnContinue.Click
-        ' Build the selected components list to hand to the invoice form
         Dim components As New List(Of (Name As String, Opt As String, Price As Integer)) From {
             ("Motherboard", If(rbMoboAMD.Checked, "AMD", "Intel"), GetMoboPrice()),
             ("Power Supply Unit", If(rbPSU400.Checked, "400 W", If(rbPSU600.Checked, "600 W", "800 W")), GetPSUPrice()),
