@@ -9,6 +9,14 @@ subtotal, and continues to an invoice screen that adds VAT and a deposit.
 > **This is a demonstration project, not a working shop.** Nothing is charged, nothing is
 > stored, and the sign-in is a hard-coded lookup table. See [What this is not](#what-this-is-not).
 
+## Background
+
+This was built as coursework for the **OCR Cambridge Technicals in Information Technology**
+qualification — <https://www.ocr.org.uk/qualifications/cambridge-technicals/information-technology/>
+
+It was developed on Windows 11 using Visual Studio 2022, and the code is published here as-is
+for anyone curious about how it works or wants to build on it.
+
 ---
 
 ## Screens
@@ -111,4 +119,14 @@ designer-generated and should not be hand-edited.
 
 ## License
 
-[MIT](LICENSE) © Ewan Croft
+[GNU Affero General Public License v3.0](LICENSE) © Ewan Croft
+
+You are free to use, copy, modify, and redistribute this. The AGPL differs from the GPL in one
+respect worth knowing about: if you run a **modified** version of this program as a network
+service, you must offer your modified source to the people who use it. For a desktop app
+distributed as an executable, the usual GPL obligations apply instead — keep the license and
+pass on the source.
+
+OCR and the Cambridge Technicals are trademarks of their respective owners. This repository is
+an unofficial student project and is not affiliated with or endorsed by OCR.
+
