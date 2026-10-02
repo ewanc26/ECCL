@@ -28,6 +28,7 @@ Partial Class Form1
         btnLogin = New Button()
         txtLoginUser = New TextBox()
         txtLoginPass = New TextBox()
+        lblDemoNote = New Label()
         SuspendLayout()
         ' 
         ' lblLoginTitle
@@ -83,11 +84,25 @@ Partial Class Form1
         txtLoginPass.Size = New Size(100, 23)
         txtLoginPass.TabIndex = 5
         ' 
+        ' lblDemoNote
+        ' 
+        lblDemoNote.Font = New Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblDemoNote.Location = New Point(25, 350)
+        lblDemoNote.Name = "lblDemoNote"
+        lblDemoNote.Size = New Size(259, 85)
+        lblDemoNote.TabIndex = 6
+        lblDemoNote.Text = "DEMO PROJECT" & vbCrLf & _
+            "No real orders, payments or data storage." & vbCrLf & vbCrLf & _
+            "Sign in with user1 / pass1" & vbCrLf & _
+            "(or user2 / pass2, user3 / pass3)"
+        lblDemoNote.TextAlign = ContentAlignment.MiddleCenter
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(309, 450)
+        Controls.Add(lblDemoNote)
         Controls.Add(txtLoginPass)
         Controls.Add(txtLoginUser)
         Controls.Add(btnLogin)
@@ -95,7 +110,7 @@ Partial Class Form1
         Controls.Add(lblLoginUser)
         Controls.Add(lblLoginTitle)
         Name = "Form1"
-        Text = "Form1"
+        Text = "ECCL – Log In"
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -106,5 +121,6 @@ Partial Class Form1
     Friend WithEvents btnLogin As Button
     Friend WithEvents txtLoginUser As TextBox
     Friend WithEvents txtLoginPass As TextBox
+    Friend WithEvents lblDemoNote As Label
 
 End Class

@@ -61,10 +61,3 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
-
-
-# Agent / tooling configuration
-**/.agents/** linguist-vendored
-.claude/** linguist-vendored
-.opencode/** linguist-vendored
-.letta/** linguist-vendored

@@ -1,23 +1,25 @@
 Public Class Form3
 
     ' ── Prototype customer "database" ─────────────────────────────────────────
+    ' Entirely fictional. Place names are invented and the "QR" postcode area is
+    ' not a real UK postcode area, so no record can be traced to a real address.
     Private ReadOnly customers As New Dictionary(Of String, (Name As String, Address As String)) From {
         {"user1", ("Ms Harriet Colton",
-                   "Willowmead Cottage" & Environment.NewLine &
-                   "Fenmere Road" & Environment.NewLine &
-                   "Huntingdon" & Environment.NewLine &
-                   "Cambridgeshire" & Environment.NewLine &
-                   "PE9F 2QQ")},
+                   "Larkspur Cottage" & Environment.NewLine &
+                   "Alder Lane" & Environment.NewLine &
+                   "Eastmoor" & Environment.NewLine &
+                   "Northshire" & Environment.NewLine &
+                   "QR1 2QQ")},
         {"user2", ("Mr John Smith",
                    "42 Oak Avenue" & Environment.NewLine &
-                   "Cambridge" & Environment.NewLine &
-                   "Cambridgeshire" & Environment.NewLine &
-                   "CB1 2AB")},
+                   "Northport" & Environment.NewLine &
+                   "Northshire" & Environment.NewLine &
+                   "QR3 5AB")},
         {"user3", ("Mrs Emily Brown",
                    "15 Rose Street" & Environment.NewLine &
-                   "Peterborough" & Environment.NewLine &
-                   "Cambridgeshire" & Environment.NewLine &
-                   "PE1 3CD")}
+                   "Kingsmoor" & Environment.NewLine &
+                   "Northshire" & Environment.NewLine &
+                   "QR8 4CD")}
     }
 
     Private ReadOnly _username As String
@@ -109,9 +111,10 @@ Public Class Form3
         Dim deposit As Decimal = Math.Round(total * 0.1D, 2)
 
         MessageBox.Show(
-            $"Payment of £{deposit:0.00} received as deposit." & Environment.NewLine &
-            $"Thank you for your order!",
-            "Payment Confirmed",
+            $"DEMO ONLY — no money has changed hands and no order exists." & Environment.NewLine & Environment.NewLine &
+            $"A deposit of £{deposit:0.00} (10% of the £{total:0.00} total) would be payable." & Environment.NewLine & Environment.NewLine &
+            $"This prototype does not process payments or store any data.",
+            "Demo – No Payment Taken",
             MessageBoxButtons.OK,
             MessageBoxIcon.Information)
 

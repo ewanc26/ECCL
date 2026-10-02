@@ -59,7 +59,7 @@ Partial Class Form3
         lblCompanyAddr.Name = "lblCompanyAddr"
         lblCompanyAddr.Size = New Size(218, 100)
         lblCompanyAddr.TabIndex = 2
-        lblCompanyAddr.Text = "Unit 3, Fenland Technology Park" & vbCrLf & "Stukeley Road" & vbCrLf & "Huntingdon" & vbCrLf & "Cambridgeshire" & vbCrLf & "PE99 7XZ"
+        lblCompanyAddr.Text = "Unit 7, Ashcroft Technology Park" & vbCrLf & "Rowan Way" & vbCrLf & "Eastmoor" & vbCrLf & "Northshire" & vbCrLf & "QR4 7XZ"
         ' 
         ' lblCustomerName
         ' 

@@ -361,3 +361,12 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Local AI agent tooling (kept on this machine, not published)
+.agents/
+.claude/
+.factory/
+.letta/
+.opencode/
+.qwen/
+.rovodev/
