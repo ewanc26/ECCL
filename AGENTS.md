@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Guidance for agents working on ECCL, a .NET 8 Visual Basic Windows Forms component-ordering prototype.
+Guidance for AI coding agents working in **ECCL**.
 
 ## Repository and user flow
 
@@ -14,7 +14,8 @@ Guidance for agents working on ECCL, a .NET 8 Visual Basic Windows Forms compone
 
 - Keep prices, visible option labels, selected defaults, tuple values, images, invoice rows, and VAT/deposit calculations aligned. The six default selections are AMD, 600 W, 2 TB HDD, 512 GB SSD, Tower, and 8 GB RAM.
 - Every price helper falls back to its final option when no radio button is checked; designer group defaults currently prevent that in normal use. Validate explicit selection if controls become dynamic.
-- `UpdateAllPrices` also calls `UpdateImages`; the form load separately calls both, so avoid adding expensive or stateful work there.
+- `UpdateAllPrices` also calls `UpdateImages`; the form load separately calls both, so avoid adding
+ expensive or stateful work there.
 - Navigation has a lifetime flaw: Continue calls `invoice.Show()`, hides `Form2`, and never closes it; closing the invoice can leave the hidden modal dashboard and hidden main form keeping the process alive. Preserve awareness of this when changing form ownership or shutdown behaviour.
 - Prefer the Visual Studio designer for layout. When editing generated files manually, keep partial classes, `Friend WithEvents` names, resource keys, `Handles` hookups, and `.resx` references synchronized.
 - Do not treat embedded credentials/customer records as real data, add real personal information, or claim that the payment dialog processes money.
@@ -34,4 +35,16 @@ Only **Claude** (Anthropic) and **Mistral** (Mistral AI) may be used as coding a
   - `Co-Authored-By: Mistral Vibe <vibe@mistral.ai>`
 - Allowed agent footers are `🤖 Generated with [Claude Code](https://claude.com/claude-code)` and `🤖 Generated with [Mistral Vibe](https://mistral.ai)`.
 - Do not add `Co-Authored-By:` trailers, `Generated with` footers, author names, or committer identities for any other agent or AI tool.
+- Do not credit another agent in commit metadata.
+
+## Allowed agents
+
+Only **Claude** (Anthropic) and **Mistral** (Mistral AI) may be used as coding agents in this repository. This rule supersedes any earlier agent-attribution guidance in this file.
+
+- Agent-assisted commits must credit only one of those agents:
+  - `Co-Authored-By: Claude <noreply@anthropic.com>`
+  - `Co-Authored-By: Mistral Vibe <vibe@mistral.ai>`
+- Allowed agent footers are `🤖 Generated with [Claude Code](https://claude.com/claude-code)` and `🤖 Generated with [Mistral Vibe](https://mistral.ai)`.
+- Do not add `Co-Authored-By:` trailers, `Generated with` footers, author names, or 
+committer identities for any other agent or AI tool.
 - Do not credit another agent in commit metadata.
